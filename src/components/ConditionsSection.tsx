@@ -86,7 +86,7 @@ const ConditionsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Ablauf */}
           {[items[0]].map((item, i) => (
             <motion.div
