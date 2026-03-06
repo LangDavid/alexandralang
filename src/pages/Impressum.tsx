@@ -23,9 +23,9 @@ const Impressum = () => {
               Angaben gemäß § 5 ECG
             </h2>
             <p>
-              Mag.<sup>a</sup> Alexandra Lang
+              Alexandra Lang, MSc
               <br />
-              Klinische Psychologin &amp; Gesundheitspsychologin
+              Klinische Psychologin
             </p>
           </section>
 
@@ -74,9 +74,7 @@ const Impressum = () => {
               Berufsbezeichnung
             </h2>
             <p>
-              Klinische Psychologin und Gesundheitspsychologin
-              <br />
-              Verliehen in Österreich
+              Eingetragene klinische Psychologin (Nr. 12827)
             </p>
           </section>
 
