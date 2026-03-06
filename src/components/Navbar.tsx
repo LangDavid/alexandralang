@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#angebot", label: "Angebot" },
+  { href: "#rahmenbedingungen", label: "Rahmenbedingungen" },
   { href: "#praxis", label: "Praxis" },
   { href: "#kontakt", label: "Kontakt" },
 ];
