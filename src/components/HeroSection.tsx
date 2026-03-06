@@ -23,10 +23,10 @@ const HeroSection = () => {
             Ein sicherer Raum für Veränderung und persönliches Wachstum.
           </p>
           <a
-            href="#kontakt"
+            href="#angebot"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-full font-body font-medium text-sm tracking-wide hover:bg-sage-dark transition-colors duration-300"
           >
-            Kontakt aufnehmen
+            Zum Angebot
           </a>
         </motion.div>
 
