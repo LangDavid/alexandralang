@@ -16,7 +16,7 @@ const items = [
     icon: Clock,
     title: "Dauer und Frequenz",
     content:
-      "Eine Einheit dauert 50 Minuten und findet, je nach Anliegen und Fortschritt der Beratung/Behandlung, wöchentlich oder 14-tägig statt. Die Psychologie bietet ein ressourcen- und lösungsorientiertes Setting. Ich arbeite nach dem Leitsatz „so viel wie nötig, so kurz wie möglich".",
+      'Eine Einheit dauert 50 Minuten und findet, je nach Anliegen und Fortschritt der Beratung/Behandlung, wöchentlich oder 14-tägig statt. Die Psychologie bietet ein ressourcen- und lösungsorientiertes Setting. Ich arbeite nach dem Leitsatz \u201Eso viel wie nötig, so kurz wie möglich\u201C.',
   },
   {
     icon: Euro,
