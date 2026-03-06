@@ -11,6 +11,9 @@ const Footer = () => {
           <Link to="/impressum" className="hover:text-background transition-colors">
             Impressum
           </Link>
+          <Link to="/datenschutz" className="hover:text-background transition-colors">
+            Datenschutz
+          </Link>
           <span>© {new Date().getFullYear()} Alle Rechte vorbehalten.</span>
         </div>
       </div>
