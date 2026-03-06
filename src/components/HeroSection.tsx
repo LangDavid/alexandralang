@@ -24,6 +24,10 @@ const HeroSection = () => {
           </p>
           <a
             href="#angebot"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("angebot")?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-full font-body font-medium text-sm tracking-wide hover:bg-sage-dark transition-colors duration-300"
           >
             Zum Angebot
