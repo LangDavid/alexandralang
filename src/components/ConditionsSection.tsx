@@ -87,7 +87,35 @@ const ConditionsSection = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
-          {items.map((item, i) => (
+          {/* Ablauf */}
+          {[items[0]].map((item, i) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-background rounded-2xl p-8"
+            >
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-12 h-12 rounded-full bg-sage-light flex items-center justify-center shrink-0">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="font-heading text-xl text-foreground">{item.title}</h3>
+              </div>
+              <ol className="space-y-3 text-muted-foreground font-light text-sm leading-relaxed list-decimal list-inside">
+                {(item.content as string[]).map((step, j) => (
+                  <li key={j}>{step}</li>
+                ))}
+              </ol>
+            </motion.div>
+          ))}
+
+          {/* Kosten */}
+          <KostenCard />
+
+          {/* Dauer und Frequenz, Absageregelung */}
+          {[items[1], items[2]].map((item, i) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 20 }}
@@ -100,25 +128,13 @@ const ConditionsSection = () => {
                 <div className="w-12 h-12 rounded-full bg-sage-light flex items-center justify-center shrink-0">
                   <item.icon className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="font-heading text-xl text-foreground">
-                  {item.title}
-                </h3>
+                <h3 className="font-heading text-xl text-foreground">{item.title}</h3>
               </div>
-
-              {Array.isArray(item.content) ? (
-                <ol className="space-y-3 text-muted-foreground font-light text-sm leading-relaxed list-decimal list-inside">
-                  {item.content.map((step, j) => (
-                    <li key={j}>{step}</li>
-                  ))}
-                </ol>
-              ) : (
-                <p className="text-muted-foreground font-light text-sm leading-relaxed">
-                  {item.content}
-                </p>
-              )}
+              <p className="text-muted-foreground font-light text-sm leading-relaxed">
+                {item.content as string}
+              </p>
             </motion.div>
           ))}
-          <KostenCard />
         </div>
       </div>
     </section>
