@@ -22,11 +22,6 @@ const experience = [
   "Psychologin bei der Telefonseelsorge in Linz (01/2020)",
 ];
 
-const praktika = [
-  "Krankenhaus der Barmherzigen Schwestern in Linz",
-  "Kinderkrisenstelle KOKO in Salzburg",
-  "Krisenzimmer von EXIT-sozial in Linz (2016–2018)",
-];
 
 const AboutSection = () => {
   return (
