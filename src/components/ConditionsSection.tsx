@@ -46,10 +46,6 @@ const KostenCard = () => (
         <span>Klinisch-psychologische Beratung/Behandlung</span>
         <span className="font-heading text-foreground whitespace-nowrap">110 € <span className="text-xs text-muted-foreground font-body">/ 50 Min.</span></span>
       </div>
-      <div className="flex items-baseline justify-between gap-4">
-        <span>Entspannungstraining</span>
-        <span className="font-heading text-foreground whitespace-nowrap">80 € <span className="text-xs text-muted-foreground font-body">/ 45 Min.</span></span>
-      </div>
       <p className="pt-1">Die Bezahlung erfolgt über Online-Überweisung.</p>
     </div>
 
