@@ -138,16 +138,6 @@ const AboutSection = () => {
                 </li>
               ))}
             </ul>
-
-            <h4 className="font-heading text-lg text-foreground mt-6 mb-3">Praktika</h4>
-            <ul className="space-y-2 text-muted-foreground font-light text-sm leading-relaxed">
-              {praktika.map((p, i) => (
-                <li key={i} className="flex items-start gap-2">
-                  <span className="text-primary mt-1.5 shrink-0">–</span>
-                  <span>{p}</span>
-                </li>
-              ))}
-            </ul>
           </motion.div>
         </div>
       </div>
