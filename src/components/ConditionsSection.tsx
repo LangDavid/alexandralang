@@ -7,8 +7,8 @@ const items = [
     title: "Ablauf",
     content: [
       "Terminanfragen können per E-Mail oder telefonisch erfolgen.",
-      "In einem anschließenden kurzen Telefongespräch kläre ich ab, ob ich Sie in Ihrem Anliegen unterstützen kann.",
-      "Im persönlichen Erstgespräch werden aktuelle Problembereiche definiert und die therapeutischen Ziele festgelegt.",
+      "Im Anschluss kläre ich ab, ob ich Sie in Ihrem Anliegen unterstützen kann.",
+      "Beim persönlichen Erstgespräch werden aktuelle Problembereiche definiert und die therapeutischen Ziele festgelegt.",
       "Dauer und Frequenz weiterer Termine werden vereinbart.",
     ],
   },
