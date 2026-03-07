@@ -5,7 +5,7 @@ const services = [
   { icon: Heart, title: "Lebenskrise", desc: "Begleitung in schwierigen Lebensphasen und bei persönlichen Umbrüchen." },
   { icon: Brain, title: "Depressive Episode", desc: "Unterstützung bei depressiven Verstimmungen und Antriebslosigkeit." },
   { icon: Flame, title: "Stress & Burnout", desc: "Strategien zur Stressbewältigung und Prävention von Erschöpfung." },
-  { icon: ShieldAlert, title: "Angststörung", desc: "Professionelle Hilfe bei Ängsten, Panikattacken und Phobien." },
+  { icon: ShieldAlert, title: "Angststörung", desc: "Professionelle Hilfe bei Ängsten, Panikattacken und innerer Unruhe." },
 ];
 
 const ServicesSection = () => {
