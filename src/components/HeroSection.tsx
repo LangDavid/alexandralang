@@ -19,7 +19,7 @@ const HeroSection = () => {
             <span className="text-primary italic">Lang</span>
           </h1>
           <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-lg mb-8">
-            Klinisch-psychologische Beratung und Behandlung im Einzelsetting.
+            Klinisch-psychologische Beratung und Behandlung im Einzelsetting in St. Georgen an der Gusen.
             Ein sicherer Raum für Veränderung und persönliches Wachstum.
           </p>
           <a

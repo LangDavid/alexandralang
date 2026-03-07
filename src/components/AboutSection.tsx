@@ -22,11 +22,6 @@ const experience = [
   "Psychologin bei der Telefonseelsorge in Linz (01/2020)",
 ];
 
-const praktika = [
-  "Krankenhaus der Barmherzigen Schwestern in Linz",
-  "Kinderkrisenstelle KOKO in Salzburg",
-  "Krisenzimmer von EXIT-sozial in Linz (2016–2018)",
-];
 
 const AboutSection = () => {
   return (
@@ -140,16 +135,6 @@ const AboutSection = () => {
                 <li key={i} className="flex items-start gap-2">
                   <span className="text-primary mt-1.5 shrink-0">–</span>
                   <span>{e}</span>
-                </li>
-              ))}
-            </ul>
-
-            <h4 className="font-heading text-lg text-foreground mt-6 mb-3">Praktika</h4>
-            <ul className="space-y-2 text-muted-foreground font-light text-sm leading-relaxed">
-              {praktika.map((p, i) => (
-                <li key={i} className="flex items-start gap-2">
-                  <span className="text-primary mt-1.5 shrink-0">–</span>
-                  <span>{p}</span>
                 </li>
               ))}
             </ul>
