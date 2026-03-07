@@ -11,21 +11,21 @@ const PraxisSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="overflow-hidden rounded-2xl"
-        >
+          className="overflow-hidden rounded-2xl">
+          
           <img
             src={praxisImg}
             alt="Praxisraum von Alexandra Lang"
-            className="w-full h-80 md:h-[450px] object-cover"
-          />
+            className="w-full h-80 md:h-[450px] object-cover" />
+          
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-        >
+          transition={{ duration: 0.7, delay: 0.1 }}>
+          
           <p className="text-sm font-body tracking-[0.3em] uppercase text-muted-foreground mb-3">
             Die Praxis
           </p>
@@ -33,9 +33,11 @@ const PraxisSection = () => {
             Praxisraum
           </h2>
           <p className="text-muted-foreground font-light leading-relaxed mb-8">
-            Die Räumlichkeiten befinden sich in der Gusentalstraße 13 in 4222
-            St. Georgen an der Gusen. Ein ruhiger, einladender Ort, der eine
-            vertrauensvolle Atmosphäre für unsere gemeinsame Arbeit bietet.
+            Ein ruhiger, einladender Ort, der eine vertrauensvolle Atmosphäre für unsere gemeinsame Arbeit bietet. Die Praxis verfügt über einen barrierefreien, ebenerdigen Zugang mit Lift und ein rollstuhlgerechtes WC. Kostenfreie Parkmöglichkeiten gibt es gegenüber am Parkplatz beim Buffet „Gusenhütte“.    
+          
+
+          
+          
           </p>
           <div className="flex items-start gap-3 text-foreground">
             <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -47,8 +49,6 @@ const PraxisSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
-};
+    </section>);};
 
 export default PraxisSection;
