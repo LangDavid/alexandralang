@@ -110,11 +110,18 @@ const AboutSection = () => {
             <ul className="space-y-2 text-muted-foreground font-light text-sm leading-relaxed">
               {qualifications.map((q, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-primary mt-1.5 shrink-0">–</span>
+                  <span className="text-primary leading-5 shrink-0">–</span>
                   <span>{q}</span>
                 </li>
               ))}
             </ul>
+            <div className="mt-6 pt-6 border-t border-border">
+              <img
+                src={boepLogo}
+                alt="Mitglied im Berufsverband Österreichischer PsychologInnen"
+                className="h-16 object-contain"
+              />
+            </div>
           </motion.div>
 
           {/* Berufliche Tätigkeit */}
