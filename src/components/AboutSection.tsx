@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import portraitImg from "@/assets/portrait.jpg";
+import boepLogo from "@/assets/boep-logo.jpeg";
 import { GraduationCap, Briefcase, Heart } from "lucide-react";
 
 const qualifications = [
