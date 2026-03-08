@@ -43,14 +43,14 @@ const ContactSection = () => {
             <span className="text-foreground font-medium">praxis@alexandralang.at</span>
           </a>
 
-          <div className="flex flex-col items-center gap-3 p-6 rounded-2xl">
-            <div className="w-12 h-12 rounded-full bg-sage-light flex items-center justify-center">
-              <MapPin className="w-5 h-5 text-primary" />
+          <a href="https://maps.google.com/?q=Gusentalstraße+13,+4222+St.+Georgen+an+der+Gusen" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 p-6 rounded-2xl hover:bg-card transition-colors">
+            <div className="w-12 h-12 rounded-full bg-sage-light flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+              <MapPin className="w-5 h-5 text-primary group-hover:text-primary-foreground" />
             </div>
             <span className="text-foreground font-medium text-center">
               Gusentalstraße 13<br />4222 St. Georgen/Gusen
             </span>
-          </div>
+          </a>
         </motion.div>
       </div>
     </section>
