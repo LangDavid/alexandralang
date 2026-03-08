@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import portraitImg from "@/assets/portrait.jpg";
+import boepLogo from "@/assets/boep-logo.jpeg";
 import { GraduationCap, Briefcase, Heart } from "lucide-react";
 
 const qualifications = [
@@ -109,11 +110,18 @@ const AboutSection = () => {
             <ul className="space-y-2 text-muted-foreground font-light text-sm leading-relaxed">
               {qualifications.map((q, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-primary mt-1.5 shrink-0">–</span>
+                  <span className="text-primary leading-5 shrink-0">–</span>
                   <span>{q}</span>
                 </li>
               ))}
             </ul>
+            <div className="mt-6 pt-6 border-t border-border">
+              <img
+                src={boepLogo}
+                alt="Mitglied im Berufsverband Österreichischer PsychologInnen"
+                className="h-16 object-contain"
+              />
+            </div>
           </motion.div>
 
           {/* Berufliche Tätigkeit */}
@@ -133,7 +141,7 @@ const AboutSection = () => {
             <ul className="space-y-2 text-muted-foreground font-light text-sm leading-relaxed">
               {experience.map((e, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-primary mt-1.5 shrink-0">–</span>
+                  <span className="text-primary leading-5 shrink-0">–</span>
                   <span>{e}</span>
                 </li>
               ))}
