@@ -46,7 +46,7 @@ const PraxisSection = () => {
             <p className="text-muted-foreground font-light leading-relaxed mb-8">
               Ein ruhiger, einladender Ort, der eine vertrauensvolle Atmosphäre für unsere gemeinsame Arbeit bietet. Die Praxis verfügt über einen barrierefreien, ebenerdigen Zugang mit Lift und ein rollstuhlgerechtes WC. Kostenfreie Parkmöglichkeiten gibt es gegenüber am Parkplatz beim Buffet „Gusenhütte".
             </p>
-            <a <a href="https://maps.app.goo.gl/QVTSmKmdKUm3jCuv6" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground hover:text-primary transition-colors"> target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground hover:text-primary transition-colors">
+            <a href="https://maps.app.goo.gl/QVTSmKmdKUm3jCuv6" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground hover:text-primary transition-colors"> target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground hover:text-primary transition-colors"> target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground hover:text-primary transition-colors">
               <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
               <p className="font-body">
                 Gusentalstraße 13
