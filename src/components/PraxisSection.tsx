@@ -46,14 +46,14 @@ const PraxisSection = () => {
             <p className="text-muted-foreground font-light leading-relaxed mb-8">
               Ein ruhiger, einladender Ort, der eine vertrauensvolle Atmosphäre für unsere gemeinsame Arbeit bietet. Die Praxis verfügt über einen barrierefreien, ebenerdigen Zugang mit Lift und ein rollstuhlgerechtes WC. Kostenfreie Parkmöglichkeiten gibt es gegenüber am Parkplatz beim Buffet „Gusenhütte".
             </p>
-            <div className="flex items-start gap-3 text-foreground">
+            <a href="https://maps.google.com/?q=Gusentalstraße+13,+4222+St.+Georgen+an+der+Gusen" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground hover:text-primary transition-colors">
               <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
               <p className="font-body">
                 Gusentalstraße 13
                 <br />
                 4222 St. Georgen an der Gusen
               </p>
-            </div>
+            </a>
           </motion.div>
         </div>
       </div>
