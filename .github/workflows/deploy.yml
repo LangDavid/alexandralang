@@ -50,6 +50,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Set custom domain
+        run: |
+          if ! gh api --method PUT /repos/${{ github.repository }}/pages \
+            -f cname="alexandralang.at"; then
+            echo "::warning::Failed to set custom domain via API. The custom domain may need to be set manually in repository Settings → Pages."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
