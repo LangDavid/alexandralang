@@ -33,6 +33,10 @@ const PraxisSection = () => {
             <img
               src={praxisImg}
               alt="Praxisraum von Alexandra Lang"
+              width={1024}
+              height={768}
+              loading="lazy"
+              decoding="async"
               className="w-full h-80 md:h-[450px] object-cover"
             />
           </motion.div>

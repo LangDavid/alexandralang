@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import portraitImg from "@/assets/portrait.jpg";
 import boepLogo from "@/assets/boep-logo.jpeg";
 import { GraduationCap, Briefcase, Heart } from "lucide-react";
 
@@ -54,8 +53,12 @@ const AboutSection = () => {
             className="overflow-hidden rounded-2xl"
           >
             <img
-              src={portraitImg}
+              src="/portrait.jpg"
               alt="Alexandra Lang – Klinische Psychologin"
+              width={1017}
+              height={1024}
+              loading="lazy"
+              decoding="async"
               className="w-full h-80 md:h-[450px] object-cover"
             />
           </motion.div>
@@ -119,6 +122,10 @@ const AboutSection = () => {
               <img
                 src={boepLogo}
                 alt="Mitglied im Berufsverband Österreichischer PsychologInnen"
+                width={222}
+                height={259}
+                loading="lazy"
+                decoding="async"
                 className="h-16 object-contain"
               />
             </div>
