@@ -14,7 +14,7 @@ const QuoteSection = () => {
           „Das seltsame Paradoxon ist, dass, wenn ich mich so akzeptiere wie ich bin,
           ich die Möglichkeit erlange, mich zu verändern."
         </blockquote>
-        <cite className="block mt-6 text-primary-foreground/70 font-body text-sm tracking-wider not-italic">
+        <cite className="block mt-6 text-primary-foreground/90 font-body text-sm tracking-wider not-italic">
           — Carl Rogers
         </cite>
       </motion.div>

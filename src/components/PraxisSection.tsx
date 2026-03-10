@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import praxisImg from "@/assets/praxis.jpg";
+import praxisWebp from "@/assets/praxis.webp";
 import { MapPin } from "lucide-react";
 
 const PraxisSection = () => {
@@ -30,15 +31,18 @@ const PraxisSection = () => {
             transition={{ duration: 0.7 }}
             className="overflow-hidden rounded-2xl"
           >
-            <img
-              src={praxisImg}
-              alt="Praxisraum von Alexandra Lang"
-              width={1024}
-              height={768}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-80 md:h-[450px] object-cover"
-            />
+            <picture>
+              <source srcSet={praxisWebp} type="image/webp" />
+              <img
+                src={praxisImg}
+                alt="Praxisraum von Alexandra Lang"
+                width={1024}
+                height={768}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-80 md:h-[450px] object-cover"
+              />
+            </picture>
           </motion.div>
 
           <motion.div
