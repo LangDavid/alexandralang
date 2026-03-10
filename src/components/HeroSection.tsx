@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center section-padding">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+        <m.div
+          initial={{ y: 30 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <p className="text-sm font-body tracking-[0.3em] uppercase text-muted-foreground mb-4">
@@ -31,11 +31,11 @@ const HeroSection = () => {
           >
             Zum Angebot
           </a>
-        </motion.div>
+        </m.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
+        <m.div
+          initial={{ scale: 0.95 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex justify-center"
         >
@@ -54,7 +54,7 @@ const HeroSection = () => {
               />
             </picture>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

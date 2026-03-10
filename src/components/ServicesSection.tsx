@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Heart, Brain, Flame, ShieldAlert } from "lucide-react";
 
 const services = [
@@ -12,7 +12,7 @@ const ServicesSection = () => {
   return (
     <section id="angebot" className="section-padding bg-background">
       <div className="max-w-6xl mx-auto">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -23,11 +23,11 @@ const ServicesSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground">
             Schwerpunkte
           </h2>
-        </motion.div>
+        </m.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
-            <motion.div
+            <m.div
               key={s.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -40,11 +40,11 @@ const ServicesSection = () => {
               </div>
               <h3 className="font-heading text-xl mb-3 text-foreground">{s.title}</h3>
               <p className="text-muted-foreground font-light text-sm leading-relaxed">{s.desc}</p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,7 +56,7 @@ const ServicesSection = () => {
             <strong className="font-medium text-foreground">Erwachsenen</strong> und{" "}
             <strong className="font-medium text-foreground">älteren Menschen</strong>.
           </p>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

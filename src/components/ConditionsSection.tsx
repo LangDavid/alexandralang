@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ClipboardList, Clock, Euro, CalendarX, BadgeEuro } from "lucide-react";
 
 const items = [
@@ -27,7 +27,7 @@ const items = [
 ];
 
 const KostenCard = () => (
-  <motion.div
+  <m.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
@@ -60,14 +60,14 @@ const KostenCard = () => (
         <p className="font-heading text-2xl text-primary mt-1">33,70 €</p>
       </div>
     </div>
-  </motion.div>
+  </m.div>
 );
 
 const ConditionsSection = () => {
   return (
     <section id="rahmenbedingungen" className="section-padding bg-card">
       <div className="max-w-5xl mx-auto">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -80,12 +80,12 @@ const ConditionsSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground">
             Rahmenbedingungen
           </h2>
-        </motion.div>
+        </m.div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Ablauf */}
           {[items[0]].map((item, i) => (
-            <motion.div
+            <m.div
               key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ const ConditionsSection = () => {
                   <li key={j}>{step}</li>
                 ))}
               </ol>
-            </motion.div>
+            </m.div>
           ))}
 
           {/* Kosten */}
@@ -112,7 +112,7 @@ const ConditionsSection = () => {
 
           {/* Dauer und Frequenz, Absageregelung */}
           {[items[1], items[2]].map((item, i) => (
-            <motion.div
+            <m.div
               key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -129,7 +129,7 @@ const ConditionsSection = () => {
               <p className="text-muted-foreground font-light text-sm leading-relaxed">
                 {item.content as string}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>
