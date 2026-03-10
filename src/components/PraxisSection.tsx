@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import praxisImg from "@/assets/praxis.jpg";
 import praxisWebp from "@/assets/praxis.webp";
 import { MapPin } from "lucide-react";
@@ -8,7 +8,7 @@ const PraxisSection = () => {
     <section id="praxis" className="section-padding bg-card">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -21,10 +21,10 @@ const PraxisSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground">
             Praxisraum
           </h2>
-        </motion.div>
+        </m.div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -43,9 +43,9 @@ const PraxisSection = () => {
                 className="w-full h-80 md:h-[450px] object-cover"
               />
             </picture>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -62,7 +62,7 @@ const PraxisSection = () => {
                 4222 St. Georgen an der Gusen
               </p>
             </a>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

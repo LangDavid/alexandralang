@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
     <section id="kontakt" className="section-padding bg-background">
       <div className="max-w-4xl mx-auto text-center">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -20,9 +20,9 @@ const ContactSection = () => {
           <p className="text-muted-foreground font-light max-w-lg mx-auto mb-12">
             Ich freue mich auf Ihre Anfrage. Vereinbaren Sie ein unverbindliches Erstgespräch.
           </p>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -51,7 +51,7 @@ const ContactSection = () => {
               Gusentalstraße 13<br />4222 St. Georgen/Gusen
             </span>
           </a>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

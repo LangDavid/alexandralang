@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import boepLogo from "@/assets/boep-logo.jpeg";
 import boepLogoWebp from "@/assets/boep-logo.webp";
 import { GraduationCap, Briefcase, Heart } from "lucide-react";
@@ -29,7 +29,7 @@ const AboutSection = () => {
     <section id="ueber-mich" className="section-padding bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -42,11 +42,11 @@ const AboutSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground">
             Über mich
           </h2>
-        </motion.div>
+        </m.div>
 
         {/* Intro with portrait */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center mb-16">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -65,9 +65,9 @@ const AboutSection = () => {
                 className="w-full h-80 md:h-[450px] object-cover"
               />
             </picture>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -95,13 +95,13 @@ const AboutSection = () => {
                 Wertschätzung.
               </p>
             </div>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Qualifikation & Erfahrung */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Qualifikation */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -136,10 +136,10 @@ const AboutSection = () => {
                 />
               </picture>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Berufliche Tätigkeit */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -160,7 +160,7 @@ const AboutSection = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>
