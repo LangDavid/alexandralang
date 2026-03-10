@@ -54,12 +54,16 @@ const AboutSection = () => {
             className="overflow-hidden rounded-2xl"
           >
             <picture>
-              <source srcSet="/portrait.webp" type="image/webp" />
+              <source
+                srcSet="/portrait-320.webp 320w, /portrait-420.webp 420w, /portrait-640.webp 640w"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                type="image/webp"
+              />
               <img
-                src="/portrait.jpg"
+                src="/portrait-640.webp"
                 alt="Alexandra Lang – Klinische Psychologin"
-                width={1017}
-                height={1024}
+                width={640}
+                height={645}
                 loading="lazy"
                 decoding="async"
                 className="w-full h-80 md:h-[450px] object-cover"
