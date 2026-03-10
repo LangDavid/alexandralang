@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import boepLogo from "@/assets/boep-logo.jpeg";
+import boepLogoWebp from "@/assets/boep-logo.webp";
 import { GraduationCap, Briefcase, Heart } from "lucide-react";
 
 const qualifications = [
@@ -52,15 +53,18 @@ const AboutSection = () => {
             transition={{ duration: 0.7 }}
             className="overflow-hidden rounded-2xl"
           >
-            <img
-              src="/portrait.jpg"
-              alt="Alexandra Lang – Klinische Psychologin"
-              width={1017}
-              height={1024}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-80 md:h-[450px] object-cover"
-            />
+            <picture>
+              <source srcSet="/portrait.webp" type="image/webp" />
+              <img
+                src="/portrait.jpg"
+                alt="Alexandra Lang – Klinische Psychologin"
+                width={1017}
+                height={1024}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-80 md:h-[450px] object-cover"
+              />
+            </picture>
           </motion.div>
 
           <motion.div
@@ -119,15 +123,18 @@ const AboutSection = () => {
               ))}
             </ul>
             <div className="mt-6 pt-6 border-t border-border">
-              <img
-                src={boepLogo}
-                alt="Mitglied im Berufsverband Österreichischer PsychologInnen"
-                width={222}
-                height={259}
-                loading="lazy"
-                decoding="async"
-                className="h-16 object-contain"
-              />
+              <picture>
+                <source srcSet={boepLogoWebp} type="image/webp" />
+                <img
+                  src={boepLogo}
+                  alt="Mitglied im Berufsverband Österreichischer PsychologInnen"
+                  width={222}
+                  height={259}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-16 object-contain"
+                />
+              </picture>
             </div>
           </motion.div>
 

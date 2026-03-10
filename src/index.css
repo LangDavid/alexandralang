@@ -13,14 +13,14 @@
     --popover: 40 33% 97%;
     --popover-foreground: 200 15% 20%;
 
-    --primary: 189 10% 65%;
+    --primary: 189 12% 39%;
     --primary-foreground: 40 33% 97%;
 
     --secondary: 35 25% 90%;
     --secondary-foreground: 200 15% 25%;
 
     --muted: 35 20% 92%;
-    --muted-foreground: 200 10% 45%;
+    --muted-foreground: 200 10% 42%;
 
     --accent: 189 10% 85%;
     --accent-foreground: 200 15% 20%;
@@ -30,13 +30,13 @@
 
     --border: 35 20% 87%;
     --input: 35 20% 87%;
-    --ring: 189 10% 65%;
+    --ring: 189 12% 39%;
 
     --radius: 0.75rem;
 
-    --sage: 189 10% 65%;
+    --sage: 189 12% 39%;
     --sage-light: 189 10% 92%;
-    --sage-dark: 189 12% 40%;
+    --sage-dark: 189 12% 28%;
     --warm: 35 30% 85%;
     --warm-dark: 30 20% 35%;
 

@@ -41,15 +41,18 @@ const HeroSection = () => {
         >
           <div className="relative w-80 h-80 md:w-[420px] md:h-[420px]">
             <div className="absolute inset-0 rounded-full bg-sage-light" />
-            <img
-              src="/portrait.jpg"
-              alt="Alexandra Lang - Klinische Psychologin"
-              width={1017}
-              height={1024}
-              fetchPriority="high"
-              decoding="sync"
-              className="relative w-full h-full object-cover rounded-full border-4 border-background shadow-xl"
-            />
+            <picture>
+              <source srcSet="/portrait.webp" type="image/webp" />
+              <img
+                src="/portrait.jpg"
+                alt="Alexandra Lang - Klinische Psychologin"
+                width={1017}
+                height={1024}
+                fetchPriority="high"
+                decoding="sync"
+                className="relative w-full h-full object-cover rounded-full border-4 border-background shadow-xl"
+              />
+            </picture>
           </div>
         </motion.div>
       </div>
