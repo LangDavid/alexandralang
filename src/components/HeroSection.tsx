@@ -42,12 +42,16 @@ const HeroSection = () => {
           <div className="relative w-80 h-80 md:w-[420px] md:h-[420px]">
             <div className="absolute inset-0 rounded-full bg-sage-light" />
             <picture>
-              <source srcSet="/portrait.webp" type="image/webp" />
+              <source
+                srcSet="/portrait-320.webp 320w, /portrait-420.webp 420w, /portrait-640.webp 640w"
+                sizes="(max-width: 768px) 320px, 420px"
+                type="image/webp"
+              />
               <img
-                src="/portrait.jpg"
+                src="/portrait-640.webp"
                 alt="Alexandra Lang - Klinische Psychologin"
-                width={1017}
-                height={1024}
+                width={420}
+                height={423}
                 fetchPriority="high"
                 decoding="sync"
                 className="relative w-full h-full object-cover rounded-full border-4 border-background shadow-xl"
