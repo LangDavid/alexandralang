@@ -10,11 +10,11 @@ const QuoteSection = () => {
         transition={{ duration: 1 }}
         className="max-w-3xl mx-auto text-center"
       >
-        <blockquote className="font-heading text-xl md:text-2xl lg:text-3xl italic text-primary-foreground leading-relaxed">
+        <blockquote className="font-heading text-xl md:text-2xl lg:text-3xl italic text-white leading-relaxed">
           „Das seltsame Paradoxon ist, dass, wenn ich mich so akzeptiere wie ich bin,
           ich die Möglichkeit erlange, mich zu verändern."
         </blockquote>
-        <cite className="block mt-6 text-primary-foreground/90 font-body text-sm tracking-wider not-italic">
+        <cite className="block mt-6 text-white/90 font-body text-sm tracking-wider not-italic">
           — Carl Rogers
         </cite>
       </m.div>
