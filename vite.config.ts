@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
     rolldownOptions: {
       output: {
         manualChunks(id) {
-          if (/node_modules\/(react|react-dom|react-router|react-router-dom|scheduler)\//.test(id)) return "vendor-react";
+          if (/node_modules\/(react|react-dom|react-router|scheduler)\//.test(id)) return "vendor-react";
           if (/node_modules\/(framer-motion|motion-dom|motion-utils)\//.test(id)) return "vendor-motion";
         },
       },

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { lazy, Suspense } from "react";
 import { LazyMotion, domAnimation } from "framer-motion";
 import Index from "./pages/Index";
