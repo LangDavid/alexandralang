@@ -1,0 +1,32 @@
+# Monthly version updates, grouped to keep the number of PRs low.
+# Security updates are separate: they are enabled in the repo settings,
+# open as soon as a fix is available and are not affected by the
+# schedule, groups or cooldown below.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    # Skip releases younger than a week; compromised npm releases are
+    # usually caught and pulled within days.
+    cooldown:
+      default-days: 7
+    groups:
+      # Minor and patch updates land as one PR. Each major update gets its
+      # own PR, since those can need code changes.
+      npm-minor-and-patch:
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns:
+          - "*"
